@@ -82,7 +82,7 @@ img{
 .text{
   align-self: center;
   max-height: 40vh;
-  overflow: auto;
+  overflow: scroll;
 }
 
 
@@ -134,20 +134,20 @@ img{
 
 /** Code for prefers reduced motion **/
 /* Make no changes below this line.
-   *************************************** 
+   ***************************************
    */
    @media screen and (prefers-reduced-motion: reduce){
     /*Turn off scroll*/
     html{
       scroll-behavior: auto; /* Removes scroll animation */
     }
-  
+
     /*Turn off transition*/
     a.skip {
       -webkit-transition: initial; /* sets to default setting */
       transition: initial; /* sets to default setting */
     }
-  
+
     /*Turn off parallax*/
     .intro{
       background-attachment: initial;
